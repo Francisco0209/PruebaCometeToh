@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>CometeToh | Comida Rapida</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Navbar">
+                <div class="Contenedor-Navbar">
+                    <div class="Navbar-Izquierda">
+                        <div class="Navbar-Nombre">
+                            <h2>CometeToh</h2>
+                        </div>
+                        <div class="Navbar-Imagen">
+                            <img src="/Imagenes/Comida Rapida.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Botón hamburguesa -->
+                    <div class="menu-toggle" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="Navbar-Derecha" id="navbar-menu">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Promociones</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Ubicacion</a></li>
+                            <li><a href="#">¡Pide Ahora!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Seccion-Principal">
+            <div class="Contenedor-SeccionPrincipal">
+                <div class="SeccionPrincipal-Texto">
+                    <h1>Cuando el bajón ataca, nosotros cocinamos</h1>
+                    <h2>El sabor callejero que te apaña en cualquier bajón.</h2>
+                    <p>En Cómetetoh, no solo cocinamos comida rápida: cocinamos salvavidas para esos momentos de hambre brígida. Desde hamburguesas gigantes hasta papas rebosantes de sabor, cada bocado está hecho para llenarte el alma (y el estómago). Pide al toque y deja que el bajón muera feliz.</p>
+                    <button><a href="https://www.figma.com/design/jIbUHC5IRT3L7zorOil1yD/Untitled?node-id=0-1&p=f&t=ycRw8r4gdNy4tBKu-0" target="_blank">Contactanos</a></button>
+                </div>
+                <div class="SeccionPrincipal-Imagen">
+                    <img src="/Imagenes/Hamburguesa.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="Seccion-Promociones">
+            <h2>Promociones</h2>
+            <div class="Contenedor-SeccionPromociones" >
+                <div class="Promocion1" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="ContenedorPromocion-Imagen">
+                        <img src="/Imagenes/Hamburguesa.png" alt="">
+                    </div>
+                    <div class="ContenedorPromocion-Texto" >
+                        <h3>Promoción 2x1 en Completos</h3>
+                        <h4>¡DOBLE COMPLETO, MISMO PRECIO!</h4>
+                        <p>¿Un bajón no se mata con uno solo? Te entendemos. Llévate 2 completos por el precio de 1 y comparte el bajón (o no... tú decides).</p>
+                        <p>🕐 Disponible de lunes a viernes, desde las 16:00 a 20:00 hrs. </p>
+                        <p>📍 Solo pedidos por WhatsApp o retiro en local.</p>
+                    </div>
+                </div>
+                <div class="Promocion2" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="ContenedorPromocion-Imagen">
+                        <img src="/Imagenes/Hamburguesa.png" alt="">
+                    </div>
+                    <div class="ContenedorPromocion-Texto">
+                        <h3>Promoción 2x1 en Hamburguesas</h3>
+                        <h4>2x1 en Hamburguesas BRÍGIDAS</h4>
+                        <p>Ven con hambre y llévate el doble. Pide una hamburguesa clásica y te regalamos otra igual para que el bajón quede KO.</p>
+                        <p>🔥 Solo los fines de semana.</p>
+                        <p>📲 Aplica en pedidos online y delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Seccion-Menu">
+            <h2>Menú Cómetetoh</h2>
+            <div class="Contenedor-Menu">
+                <div class="Menu-Superior" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="Menu1">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Completo Mortal</h4>
+                            <p>Vienesa XL, palta fresca, tomate, mayo casera, chucrut y mostaza.</p>
+                            <span>$3.500 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu2">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Fajita Brígida</h4>
+                            <p>Tortilla rellena con pollo salteado, pimentones, cebolla morada, lechuga y salsa cheddar.</p>
+                            <span>$4.200 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu3">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Hamburguesa “La Bajonera”</h4>
+                            <p>Doble carne, doble queso, tocino crujiente, pepinillos, cebolla crispy y salsa BBQ.</p>
+                            <span>$4.500 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu4">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Papas Locas Cómetetoh</h4>
+                            <p>Papas fritas con queso fundido, carne mechada, cebolla crispy y salsas a elección.</p>
+                            <span>$4.500 CLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Menu-Inferior" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="Menu5">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Sandwich Mechao Power</h4>
+                            <p>Pan frica con carne mechada, tomate, palta y mayo casera.</p>
+                            <span>$4.800 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu6">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Taco Callejero (2 unidades)</h4>
+                            <p>Carne sazonada, cebolla, cilantro, ají verde y limón. Opción veggie disponible.</p>
+                            <span>$3.800 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu7">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Nachos Explosivos</h4>
+                            <p>Totopos crujientes con queso cheddar, carne molida, jalapeños, crema ácida y guacamole.</p>
+                            <span>$4.300 CLP</span>
+                        </div>
+                    </div>
+                    <div class="Menu8">
+                        <div class="Imagen-Menu">
+                            <img src="/Imagenes/Hamburguesa.png" alt="">
+                        </div>
+                        <div class="Texto-Menu">
+                            <h4>Alitas BBQ (6 unidades)</h4>
+                            <p>Alitas de pollo bañadas en salsa BBQ o picante. Acompañadas con bastones de apio y dip</p>
+                            <span>$4.200 CLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Seccion-Reseñas">
+            <h2>Reseña de Nuestros Clientes</h2>
+            <div class="Contenedor-Reseñas">
+                <div class="Reseñas-Izquierda" data-aos="fade-right" data-aos-duration="1400">
+                    <div class="Reseña1">
+                        <div class="Reseña-Superior">
+                            <div class="Imagen-ReseñaSuperior">
+                                <img src="/Imagenes/ippo.png" alt="">
+                            </div>
+                            <div class="Texto-ReseñaSuperior">
+                                <h3>Valentina R.</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Reseña-Inferior">
+                            <p>“Pedí un combo de hamburguesa con papas y quedé pa’ la cagá. ¡Demasiado rico! La carne jugosa, el pan suave y las salsas... ufff. 100% recomendado para matar el bajón.”</p>
+                        </div>
+                    </div>
+                    <div class="Reseña2">
+                        <div class="Reseña-Superior">
+                            <div class="Imagen-ReseñaSuperior">
+                                <img src="/Imagenes/ippo.png" alt="">
+                            </div>
+                            <div class="Texto-ReseñaSuperior">
+                                <h3>Cristóbal M.</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star star-grey"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Reseña-Inferior">
+                            <p>“Primera vez que pido y me sorprendió lo rápido que llegó todo. Los completos están filete, harto palta y mayo casera como debe ser. Ya tienen un cliente fijo 👌.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Reseñas-Derecha" data-aos="fade-left" data-aos-duration="1400">
+                    <div class="Imagen-ContenedorReseña">
+                        <img src="/Imagenes/HamburguesaReseña.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Seccion-Contacto">
+            <h2>Contacto</h2>
+            <div class="Contenedor-Contacto">
+                <div class="Informacion-Contacto">
+                    <div class="Informacion1">
+                        <div class="Informacion-Icono">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="Informacion-Texto">
+                            <h3>Dirección:</h3>
+                            <p>Av. Los Bajones 1313, Local 4, Santiago Centro, Región Metropolitana, Chile</p>
+                        </div>
+                    </div>
+                    <div class="Informacion2">
+                        <div class="Informacion-Icono">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="Informacion-Texto">
+                            <h3>Teléfono / WhatsApp:</h3>
+                            <p><a href="#">+56 9 8765 4321</a> (Haz tu pedido directo por WhatsApp o llámanos)</p>
+                        </div>
+                    </div>
+                    <div class="Informacion3">
+                        <div class="Informacion-Icono">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="Informacion-Texto">
+                            <h3>Correo electrónico:</h3>
+                            <p><a class="Correo" href="#">contacto@cometetoh.cl</a></p>
+                        </div>
+                    </div>
+                    <div class="Informacion4">
+                        <div class="Informacion-Icono">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="Informacion-Texto">
+                            <h3>Horario de atención:</h3>
+                            <p>Lunes a Viernes: 12:00 PM – 11:00 PM</p>
+                            <p>Sábados y Domingos: 13:00 PM – 01:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="Informacion5">
+                        <div class="Informacion-Icono">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                        <div class="Informacion-Texto">
+                            <h3>Redes sociales:</h3>
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Mapa-Contacto" >
+                    <div id="Map" class="Mapa-Interactivo" > 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="Seccion-Footer">
+            <div class="Contenedor-Footer">
+                <div class="Footer-Informacion">
+                    <h4>CometeToh</h4>
+                    <h6>Tan bueno que no vas a dejar nada</h6>
+                </div>
+                <div class="Footer-Items">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Ubicacion</a></li>
+                        <li><a href="#">¡Pide Ahora!</a></li>
+                    </ul>
+                </div>
+                <div class="Footer-Redes">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Copiright-Footer">
+                <h5>© 2025 CometeToh</h5>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script
+</body>
+
+</html>
